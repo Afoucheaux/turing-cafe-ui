@@ -4,10 +4,9 @@ import './ResLayout.css'
 
 const ResLayout = () => {
   return (
-    <>
-    <h1>Layout test</h1>
-    <ResCard />
-    </>
+    <section className="res-layout">
+      <ResCard />
+    </section>
   )
 }
 

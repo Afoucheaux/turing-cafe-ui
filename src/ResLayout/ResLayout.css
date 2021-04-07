@@ -1,0 +1,7 @@
+.res-layout {
+  margin: 0;
+  width: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
