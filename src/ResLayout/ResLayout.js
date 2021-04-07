@@ -1,6 +1,7 @@
 import React from 'react';
 import ResCard from '../ResCards/ResCards.js';
-import './ResLayout.css'
+import './ResLayout.css';
+
 
 const ResLayout = ( {reservations} ) => {
   const allRes = reservations.map(res => {
