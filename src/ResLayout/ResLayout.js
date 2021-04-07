@@ -5,15 +5,15 @@ import './ResLayout.css';
 
 const ResLayout = ( {reservations} ) => {
   const allRes = reservations.map(res => {
-    console.log(reservations)
+    console.log(res)
     return (
       <ResCard
-        name={reservations.name}
-        date={reservations.date}
-        time={reservations.time}
-        number={reservations.number}
-        id={reservations.id}
-        key={reservations.id}
+        name={res.name}
+        date={res.date}
+        time={res.time}
+        number={res.number}
+        id={res.id}
+        key={res.id}
       />
     )
   })

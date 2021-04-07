@@ -12,6 +12,10 @@ class App extends Component {
     }
   }
 
+  addNewResy = (newResy) => {
+    this.setState( {reservations: [...this.state.reservations, newResy] });
+  }
+
   componentDidMount() {
     getReservations()
     .then(resy => this.setState( {reservations: resy} ))
@@ -21,7 +25,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className='app-title'>Turing Cafe Reservations</h1>
-          <Form />
+          <Form  addNewResy={this.addNewResy}/>
           <ResLayout reservations={this.state.reservations} />
       </div>
     )
