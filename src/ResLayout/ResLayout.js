@@ -3,7 +3,7 @@ import ResCard from '../ResCards/ResCards.js';
 import './ResLayout.css';
 
 
-const ResLayout = ( {reservations} ) => {
+const ResLayout = ( {reservations, cancelResy} ) => {
   const allRes = reservations.map(res => {
     console.log(res)
     return (
@@ -14,6 +14,7 @@ const ResLayout = ( {reservations} ) => {
         number={res.number}
         id={res.id}
         key={res.id}
+        cancelResy={cancelResy}
       />
     )
   })

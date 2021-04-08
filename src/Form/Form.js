@@ -33,29 +33,29 @@ class Form extends Component {
 
   render() {
     return (
-     <form className='reservation-form'>
-      <input
+     <form className='reservation-form' data-cy="form">
+      <input data-cy="form-name"
         type='text'
         placeholder='name'
         name='name'
         value={this.state.name}
         onChange={event => this.handleChange(event)}
       />
-      <input
+      <input data-cy="form-date"
         type='text'
         placeholder='date (mm/dd)'
         name='date'
         value={this.state.date}
         onChange={event => this.handleChange(event)}
       />
-      <input
+      <input data-cy="form-time"
         type='text'
         placeholder='time'
         name='time'
         value={this.state.time}
         onChange={event => this.handleChange(event)}
       />
-      <input
+      <input data-cy="form-number"
         type='number'
         placeholder='number'
         name='number'
@@ -64,7 +64,7 @@ class Form extends Component {
         value={this.state.number}
         onChange={event => this.handleChange(event)}
       />
-      <button onClick={event => this.submitResy(event)} className="form=button">Make Reservation</button>
+      <button onClick={event => this.submitResy(event)} className="form=button" data-cy="submit">Make Reservation</button>
      </form>
     )
   }
